@@ -1,17 +1,19 @@
-! Combined allowlist
-! Generated on Tue Apr 21 18:42:51 UTC 2026
+# Combined allowlist
+#Generated on Tue Apr 21 18:50:11 UTC 2026
 
-! Source: allowlist-cdn.txt
+
+#Source: allowlist-cdn.txt
 @@||s.uicdn.com^
-! Source: allowlist-general.txt
+
+#Source: allowlist-general.txt
 @@||dhl.de^
-! Source: allowlist-maps.txt
+
+#Source: allowlist-maps.txt
 @@||maps.google.com^
 @@||maps.apple.com^
-! Source: allowlist-tracker.txt
+
+#Source: allowlist-tracker.txt
 @@||mydealz.digidip.net^
 @@||s.click.aliexpress.com^
 @@||locate.measurementlab.net^
 @@||mlab-oti.measurement-lab.org^
-@@||prf.hn^
-
