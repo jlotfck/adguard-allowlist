@@ -1,5 +1,5 @@
 ! Combined allowlist
-! Generated on Tue Apr 21 18:33:20 UTC 2026
+! Generated on Tue Apr 21 18:42:51 UTC 2026
 
 ! Source: allowlist-cdn.txt
 @@||s.uicdn.com^
@@ -13,3 +13,5 @@
 @@||s.click.aliexpress.com^
 @@||locate.measurementlab.net^
 @@||mlab-oti.measurement-lab.org^
+@@||prf.hn^
+
