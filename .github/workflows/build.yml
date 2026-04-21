@@ -18,12 +18,13 @@ jobs:
       - name: Build combined allowlist
         run: |
           OUTPUT=combined/allowlist-all.txt
-          echo "! Combined allowlist" > $OUTPUT
-          echo "! Generated on $(date)" >> $OUTPUT
+          echo "# Combined allowlist" > $OUTPUT
+          echo "#Generated on $(date)" >> $OUTPUT
           echo "" >> $OUTPUT
 
           for file in lists/*.txt; do
-            echo "! Source: $(basename $file)" >> $OUTPUT
+            echo "" >> $OUTPUT
+            echo "#Source: $(basename $file)" >> $OUTPUT
             cat "$file" >> $OUTPUT
             echo "" >> $OUTPUT
           done
