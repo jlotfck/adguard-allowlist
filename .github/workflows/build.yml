@@ -19,12 +19,12 @@ jobs:
         run: |
           OUTPUT=combined/allowlist-all.txt
           echo "# Combined allowlist" > $OUTPUT
-          echo "#Generated on $(date)" >> $OUTPUT
+          echo "# Generated on $(date)" >> $OUTPUT
           echo "" >> $OUTPUT
 
           for file in lists/*.txt; do
             echo "" >> $OUTPUT
-            echo "#Source: $(basename $file)" >> $OUTPUT
+            echo "# Source: $(basename $file)" >> $OUTPUT
             cat "$file" >> $OUTPUT
             echo "" >> $OUTPUT
           done
