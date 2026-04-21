@@ -1,0 +1,37 @@
+name: Build Allowlist
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'lists/*.txt'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Build combined allowlist
+        run: |
+          OUTPUT=combined/allowlist-all.txt
+          echo "! Combined allowlist" > $OUTPUT
+          echo "! Generated on $(date)" >> $OUTPUT
+          echo "" >> $OUTPUT
+
+          for file in lists/*.txt; do
+            echo "! Source: $(basename $file)" >> $OUTPUT
+            cat "$file" >> $OUTPUT
+            echo "" >> $OUTPUT
+          done
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add combined/allowlist-all.txt
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update combined allowlist"
+          git push
