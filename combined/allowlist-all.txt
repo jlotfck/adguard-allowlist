@@ -1,5 +1,5 @@
 # Combined allowlist
-# Generated on Wed May 13 16:56:53 UTC 2026
+# Generated on Mon May 18 18:57:17 UTC 2026
 
 
 # Source: allowlist-cdn.txt
@@ -18,3 +18,5 @@
 @@||locate.measurementlab.net^
 @@||mlab-oti.measurement-lab.org^
 @@||fae.yazio-analytics.com^
+@@||smetrics.aem.playstation.com^
+@@||datarouter.ol.epicgames.com^
