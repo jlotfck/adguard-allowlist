@@ -5,3 +5,4 @@
 @@||fae.yazio-analytics.com^
 @@||smetrics.aem.playstation.com^
 @@||datarouter.ol.epicgames.com^
+@@||firebaseinstallations.googleapis.com^
